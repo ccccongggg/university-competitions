@@ -184,11 +184,13 @@ git submodule update --remote --merge
 # 拉取真实大文件（需先安装 git-lfs）
 bash scripts/pull-lfs.sh
 
-# 把大仓库推送到 GitHub（需确认后执行）
+# 大仓库已上线；后续同步更新可重复运行（脚本会复用已存在的远程仓库）
 bash scripts/push-to-github.sh
 ```
 
 子模块 URL 写在 `.gitmodules` 里，全部使用官方 `https://github.com/...`，保证仓库可移植；国内加速只在脚本里用 `url.<mirror>.insteadOf` 临时映射，不写死进仓库。
+
+远程仓库：**https://github.com/ccccongggg/university-competitions**（Public，`main`）
 
 ---
 
@@ -199,7 +201,7 @@ bash scripts/push-to-github.sh
 | 5 个有内容的仓库 | ✅ 已作为子模块登记，指向 2026-08-14 的 `Organize competition project materials` 提交 |
 | `robot` 空仓库 | ⚠️ 占位说明，等首次提交后转子模块 |
 | 原 6 个 GitHub 仓库 | ✅ 全部原样保留（未删除、未归档、未改可见性） |
-| GitHub 上的大仓库 | ⏳ 待确认后创建并推送（脚本已备好） |
+| GitHub 上的大仓库 | ✅ 已创建并推送：[ccccongggg/university-competitions](https://github.com/ccccongggg/university-competitions)（Public，`main`） |
 | 机械创新仓库隐私 | ⚠️ `documents/` 含报名表 / 承诺书，当前 Public，建议核查 |
 | 机械创新仓库长文件名 | ✅ 已用 `core.longpaths=true` 修复，本机文件完整 |
 | 本机 LFS 过滤器 | ✅ 子模块本地 filter 已置空，日常 `git` 命令不再报错；装好 `git-lfs` 后跑 `scripts/pull-lfs.sh` 会自动恢复 |
