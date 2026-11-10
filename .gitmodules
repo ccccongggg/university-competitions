@@ -1,0 +1,20 @@
+[submodule "national-smart-car-competition"]
+	path = national-smart-car-competition
+	url = https://github.com/ccccongggg/national-smart-car-competition.git
+	branch = main
+[submodule "national-mechanical-innovation-competition"]
+	path = national-mechanical-innovation-competition
+	url = https://github.com/ccccongggg/national-mechanical-innovation-competition.git
+	branch = main
+[submodule "national-electronic-design-competition"]
+	path = national-electronic-design-competition
+	url = https://github.com/ccccongggg/national-electronic-design-competition.git
+	branch = main
+[submodule "national-electromechanical-product-design-competition"]
+	path = national-electromechanical-product-design-competition
+	url = https://github.com/ccccongggg/national-electromechanical-product-design-competition.git
+	branch = main
+[submodule "national-advanced-drawing-competition"]
+	path = national-advanced-drawing-competition
+	url = https://github.com/ccccongggg/national-advanced-drawing-competition.git
+	branch = main
